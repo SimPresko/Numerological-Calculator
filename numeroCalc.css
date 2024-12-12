@@ -1,0 +1,215 @@
+html{
+  height:   100%;
+  font-size: 16px;
+  font-family: "Commissioner";
+}
+body{
+  margin:0;
+  height: 100%;
+  background-image: url(bckgr-Psy-Num.jpg) ;
+  background-position: top;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainBox{
+  height: 99%;
+  margin-left: 10%;
+  text-align: center;
+  width: 80%;
+}
+h2{
+  margin: 10px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.navbarBox{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.inputBox{
+  color:brown;
+  height: 8.5%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.buttonsDiv{
+  width: 100%;
+  display: flex;
+  justify-content: 	space-evenly;
+}
+.button{
+  width: 40%;
+  vertical-align: center;
+  border:1px solid salmon;
+  background-color: beige;
+  color:lightcoral;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+.button:hover{
+  background-color: wheat
+}
+.button:active{
+  background-color: tan
+}
+.button-calc:hover{
+  cursor: pointer;
+}
+.button-clear:hover{
+  cursor: pointer;
+}
+.text-inside-button{
+  margin: 10px;
+}
+.middleBox{
+  display: flex;
+  height: 78%;
+  flex-direction: row;
+}
+.matrix{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.rightSide{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.matrixNumbers{
+  height: 25%;
+  font-size: 1.4rem;
+  text-align: start;
+  font-weight: 600;
+}
+.matrixNumbers p{
+  margin:10px
+}
+table{
+  border-style: hidden;
+  border-collapse: collapse;
+  font-size: 4rem;
+  margin-left: 15%;
+  margin-top:15%;
+  height: 70%;
+  width: 70%;
+  color:rgb(92, 92, 92);
+}
+table td, table th{
+  border:3px solid rgb(92, 92, 92);
+}
+th{
+  font-size: 2rem;
+  height: 100px;
+  width: 100px;
+}
+.input-date{
+  border:none;
+  font-size: 1.5rem;
+}
+.graph{
+  width: 98%;
+  height: 75%;
+}
+@media screen and (max-width:1200px) {
+  .button{
+    width: 40%;
+    font-size: 1rem;
+  }
+  .mainBox{
+    width: 100%;
+    margin-left: 0;
+  }
+  table{
+    margin-left: 10%;
+    margin-top:15%;
+    height: 80%;
+    width: 80%;
+    font-size:5rem;
+  }
+}
+@media screen and (max-width:900px) {
+  .button{
+    font-size: 0.9rem;
+  }
+  .mainBox{
+    width: 100%;
+    margin-left: 0;
+  }
+  table{
+    margin-left: 5%;
+    margin-top:10%;
+    height: 90%;
+    width: 90%;
+    font-size:5rem;
+  }
+  .matrix{
+    width: 50%;
+  }
+  .rightSide{
+    width: 50%;
+  }
+}
+@media screen and (max-width:700px) {
+  .inputBox{
+    width: 80%;
+  }
+  .button{
+    font-size: 0.8rem;
+  }
+  .middleBox{
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainBox{
+    height: 1200px;
+  }
+  .matrix{
+    width: 80%;
+    height: 1200px;
+  }
+  .table{
+    width: 70%;
+    height: 70%;
+  }
+  .rightSide{
+    margin-top:20px;
+    height: 500px;
+    width: 90%;
+    justify-content: center;
+  }
+  .matrixNumbers{
+    width: 100%;
+    height: 150px;
+    margin-left: 50px;
+  }
+  .graph{
+    height: 400px;
+  }
+}
+@media screen and (max-width:500px) {
+  .inputBox{
+    display: flex;
+    flex-direction: column  ;
+  }
+  .buttonsDiv{
+    margin-top:10px
+  }
+  .matrix{
+    width: 90%;
+  }
+  table{
+    margin-left: 5%;
+  }
+  .matrixNumbers{
+    margin-left:0;
+  }
+}

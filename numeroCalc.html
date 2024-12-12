@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumeroCalc</title>
+  <link rel="stylesheet" href="numeroCalc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="mainBox">
+    <div class="navbarBox">
+      <h2>Enter date of birth</h2>
+    <div class="inputBox">
+      <div>
+        <input class="input-date js-input-date" type="date" min="1900-01-01" max="2049-12-31">
+      </div>
+      <div class="buttonsDiv">
+        <div class="button button-calc js-calc"><p class="text-inside-button">Calculate</p></div>
+        <div class="button button-clear js-clear"><p class="text-inside-button">Clear</p></div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="middleBox">
+      <div class="matrix">
+        <table>
+          <tr>
+            <th class="js-1s">-</th>
+            <th class="js-4s">-</th>
+            <th class="js-7s">-</th>
+          </tr>
+          <tr>
+            <th class="js-2s">-</th>
+            <th class="js-5s">-</th>
+            <th class="js-8s">-</th>
+          </tr>
+          <tr>
+            <th class="js-3s">-</th>
+            <th class="js-6s">-</th>
+            <th class="js-9s">-</th>
+          </tr>
+        </table>
+      </div>
+      <div class="rightSide">
+        <div class="matrixNumbers">
+          <p class="js-destination-number">Number of destination:</p>
+          <p class="js-male-numbers">Masculine number count:</p>
+          <p class="js-female-numbers">Feminine number count:</p>
+        </div>
+        <div class="graph" id="graph">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+  
+  <script type="module" src="makeGraph.js"></script>
+  <script type="module" src="numeroCalc.js"></script>
+  <script type="module" src="matrixNums.js"></script>
+</body>
+</html>
